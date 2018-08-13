@@ -10,7 +10,7 @@
 [![Packagist](https://poser.pugx.org/zgabievi/kendo-grid-state/d/total.svg)](https://packagist.org/packages/zgabievi/kendo-grid-state)
 [![Packagist](https://img.shields.io/packagist/l/zgabievi/kendo-grid-state.svg)](https://packagist.org/packages/zgabievi/kendo-grid-state)
 
-Package description: CHANGE ME
+**DESCRIPTION HERE**
 
 ## Installation
 
