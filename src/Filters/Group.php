@@ -14,7 +14,7 @@ class Group extends FilterAbstract
      */
     public function filter(Builder $builder, $descriptors)
     {
-        if (!is_array($descriptors)) {
+        if (! is_array($descriptors)) {
             return $builder;
         }
 
@@ -30,7 +30,7 @@ class Group extends FilterAbstract
      */
     protected function handle(Builder $builder, $descriptor)
     {
-        if (!is_array($descriptor) || is_null($descriptor['field'])) {
+        if (! is_array($descriptor) || is_null($descriptor['field'])) {
             return $builder;
         }
 
