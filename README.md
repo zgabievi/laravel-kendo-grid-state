@@ -14,47 +14,57 @@ Install via composer
 composer require zgabievi/kendo-grid-state
 ```
 
-### Register Service Provider
-
-**Note! This and next step are optional if you use laravel>=5.5 with package
-auto discovery feature.**
-
-Add service provider to `config/app.php` in `providers` section
-```php
-Zgabievi\KendoGridState\ServiceProvider::class,
-```
-
-### Register Facade
-
-Register package facade in `config/app.php` in `aliases` section
-```php
-Zgabievi\KendoGridState\Facades\KendoGridState::class,
-```
-
-### Publish Configuration File
-
-```bash
-php artisan vendor:publish --provider="Zgabievi\KendoGridState\ServiceProvider" --tag="config"
-```
-
 ## Usage
 
-CHANGE ME
+To use this package you only need to add `Filterable` trait to your model
 
-## Security
+**Example:**
 
-If you discover any security related issues, please email zura.gabievi@gmail.com
-instead of using the issue tracker.
+```php
+ namespace App;
+ 
+ use Illuminate\Database\Eloquent\Model;
+ use Zgabievi\KendoGridState\Traits\Filterable;
+ 
+ class Post extends Model
+ {
+     use Filterable;
+     
+     //
+ }
+```
+
+**URL Examples:**
+
+- `https://domain.com/api/posts?take=5`
+- `https://domain.com/api/posts?skip=5&take=2`
+- `https://domain.com/api/posts?sort[0][field]=title&sort[0][dir]=desc`
+- `https://domain.com/api/posts?filter[logic]=and&filter[filters][0][field]=title&filter[filters][0][operator]=eq&filter[filters][0][value]=POST_TITLE`
+
+**Query Parameters:**
+
+- **filter?**
+  - **filters[]**
+    - **field?** (string | Function)
+    - **ignoreCase?** (boolean)
+    - **operator** ("eq", "neq", "isnull", "isnotnull", "lt", "lte", "gt", "gte", "startswith", "endswith", "contains", "doesnotcontain", "isempty", "isnotempty")
+    - **value?** (any)
+  - **logic** ("or", "and")
+- **group?[]**
+  - **aggregates?[]**
+    - **aggregate** ("count", "sum", "average", "min", "max")
+    - **field** (string)
+  - **dir?** ("asc", "desc")
+  - **field** (string)
+- **skip?** (number)
+- **sort?**
+  - **dir?** ("asc", "desc")
+  - **field** (string)
+- **take?** (number)
 
 ## Credits
 
 - [Zura Gabievi](https://github.com/zgabievi/kendo-grid-state)
 - [All contributors](https://github.com/zgabievi/kendo-grid-state/graphs/contributors)
 
-This package is bootstrapped with the help of
-[melihovv/laravel-package-generator](https://github.com/melihovv/laravel-package-generator).
 
-
-### Reminder
-- `use Filterable`
-- `config/database.php` > `"strict" => false`

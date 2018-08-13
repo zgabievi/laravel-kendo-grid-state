@@ -9,7 +9,7 @@ abstract class FilterAbstract
     /**
      * @param Builder $builder
      * @param $value
-     * @return Builder
+     * @return \Illuminate\Database\Query\Builder|Builder
      */
     abstract public function filter(Builder $builder, $value);
 }
