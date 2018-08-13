@@ -1,7 +1,7 @@
 # Laravel Kendo Grid State
 
 [![Build Status](https://travis-ci.org/zgabievi/kendo-grid-state.svg?branch=master)](https://travis-ci.org/zgabievi/kendo-grid-state)
-[![styleci](https://styleci.io/repos/qyjZwp/shield)](https://styleci.io/repos/qyjZwp)
+[![styleci](https://styleci.io/repos/144536973/shield)](https://styleci.io/repos/144536973)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zgabievi/kendo-grid-state/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zgabievi/kendo-grid-state/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/CHANGEME/mini.png)](https://insight.sensiolabs.com/projects/CHANGEME)
 [![Coverage Status](https://coveralls.io/repos/github/zgabievi/kendo-grid-state/badge.svg?branch=master)](https://coveralls.io/github/zgabievi/kendo-grid-state?branch=master)
