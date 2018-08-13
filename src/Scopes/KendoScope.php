@@ -2,8 +2,15 @@
 
 namespace Zgabievi\KendoGridState\Scopes;
 
-use Illuminate\Database\Eloquent\{Scope, Model, Builder};
-use Zgabievi\KendoGridState\Filters\{Group, Skip, Sort, State, Filter, Take};
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Scope;
+use Illuminate\Database\Eloquent\Builder;
+use Zgabievi\KendoGridState\Filters\Skip;
+use Zgabievi\KendoGridState\Filters\Sort;
+use Zgabievi\KendoGridState\Filters\Take;
+use Zgabievi\KendoGridState\Filters\Group;
+use Zgabievi\KendoGridState\Filters\State;
+use Zgabievi\KendoGridState\Filters\Filter;
 
 class KendoScope implements Scope
 {

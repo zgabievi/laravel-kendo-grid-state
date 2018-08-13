@@ -14,7 +14,7 @@ class Sort extends FilterAbstract
      */
     public function filter(Builder $builder, $descriptors)
     {
-        if (!is_array($descriptors)) {
+        if (! is_array($descriptors)) {
             return $builder;
         }
 
@@ -30,7 +30,7 @@ class Sort extends FilterAbstract
      */
     protected function handle(Builder $builder, $descriptor)
     {
-        if (!is_array($descriptor) || !array_key_exists('field', $descriptor)) {
+        if (! is_array($descriptor) || ! array_key_exists('field', $descriptor)) {
             return $builder;
         }
 
