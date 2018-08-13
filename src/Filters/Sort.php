@@ -26,7 +26,7 @@ class Sort extends FilterAbstract
     /**
      * @param Builder $builder
      * @param $descriptor
-     * @return Builder
+     * @return \Illuminate\Database\Query\Builder|Builder
      */
     protected function handle(Builder $builder, $descriptor)
     {

@@ -31,7 +31,7 @@ class Filter extends FilterAbstract
      * @param Builder $builder
      * @param $descriptor
      * @param $logic
-     * @return Builder
+     * @return \Illuminate\Database\Query\Builder|Builder
      */
     protected function handle(Builder $builder, $descriptor, $logic)
     {

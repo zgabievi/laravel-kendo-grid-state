@@ -30,7 +30,7 @@ class KendoScope implements Scope
      *
      * @param Builder $builder
      * @param Model $model
-     * @return Builder
+     * @return \Illuminate\Database\Query\Builder|Builder
      */
     public function apply(Builder $builder, Model $model)
     {

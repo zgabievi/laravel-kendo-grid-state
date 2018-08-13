@@ -10,7 +10,7 @@ class Skip extends FilterAbstract
     /**
      * @param Builder $builder
      * @param $value
-     * @return Builder
+     * @return \Illuminate\Database\Query\Builder|Builder
      */
     public function filter(Builder $builder, $value)
     {
