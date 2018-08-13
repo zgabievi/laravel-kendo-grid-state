@@ -2,7 +2,6 @@
 
 namespace Zgabievi\KendoGridState\Tests;
 
-use Illuminate\Http\Request;
 use Zgabievi\KendoGridState\Tests\Models\Post;
 
 class FilterScopeTest extends TestCase

@@ -14,7 +14,7 @@ class Take extends FilterAbstract
      */
     public function filter(Builder $builder, $value)
     {
-        if (!self::isValid($value)) {
+        if (! self::isValid($value)) {
             return $builder;
         }
 

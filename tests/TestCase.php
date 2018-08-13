@@ -2,10 +2,10 @@
 
 namespace Zgabievi\KendoGridState\Tests;
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Zgabievi\KendoGridState\Tests\Models\Post;
+use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Zgabievi\KendoGridState\Tests\Models\Post;
 
 abstract class TestCase extends Orchestra
 {
@@ -64,7 +64,7 @@ abstract class TestCase extends Orchestra
     public function createPost($amount = 1, array $data = null)
     {
         for ($i = 1; $i <= $amount; $i++) {
-            Post::create($data ? $data : ['name' => 'Post #' . $i]);
+            Post::create($data ? $data : ['name' => 'Post #'.$i]);
         }
     }
 

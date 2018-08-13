@@ -18,7 +18,7 @@ class Filter extends FilterAbstract
         $logic = array_get($descriptors, 'logic', 'and');
         $filters = array_get($descriptors, 'filters', []);
 
-        if (!is_array($filters)) {
+        if (! is_array($filters)) {
             return $builder;
         }
 
@@ -35,7 +35,7 @@ class Filter extends FilterAbstract
      */
     protected function handle(Builder $builder, $descriptor, $logic)
     {
-        if (!is_array($descriptor) || !array_key_exists('field', $descriptor)) {
+        if (! is_array($descriptor) || ! array_key_exists('field', $descriptor)) {
             return $builder;
         }
 
@@ -65,7 +65,7 @@ class Filter extends FilterAbstract
      */
     protected function resolveField($descriptor)
     {
-        return $this->isBinary($descriptor) ? DB::raw('BINARY ' . $descriptor['field']) : $descriptor['field'];
+        return $this->isBinary($descriptor) ? DB::raw('BINARY '.$descriptor['field']) : $descriptor['field'];
     }
 
     /**
@@ -74,7 +74,7 @@ class Filter extends FilterAbstract
      */
     protected function resolveOperator($descriptor)
     {
-        if (!array_key_exists('operator', $descriptor)) {
+        if (! array_key_exists('operator', $descriptor)) {
             return '=';
         }
 
@@ -128,14 +128,14 @@ class Filter extends FilterAbstract
                 return $value;
 
             case 'startswith':
-                return $value . '%';
+                return $value.'%';
 
             case 'endswith':
-                return '%' . $value;
+                return '%'.$value;
 
             case 'contains':
             case 'doesnotcontain':
-                return '%' . $value . '%';
+                return '%'.$value.'%';
 
             case 'isempty':
             case 'isnotempty':
