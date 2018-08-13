@@ -1,6 +1,6 @@
 # Laravel Kendo Grid State
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/zgabievi/kendo-grid-state.svg?style=flat-square)](https://packagist.org/packages/beyondcode/laravel-self-diagnosis)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/zgabievi/kendo-grid-state.svg?style=flat-square)](https://packagist.org/packages/zgabievi/kendo-grid-state)
 [![Build Status](https://img.shields.io/travis/zgabievi/laravel-kendo-grid-state/master.svg?style=flat-square)](https://travis-ci.org/zgabievi/laravel-kendo-grid-state)
 [![Quality Score](https://img.shields.io/scrutinizer/g/zgabievi/laravel-kendo-grid-state.svg?style=flat-square)](https://scrutinizer-ci.com/g/zgabievi/laravel-kendo-grid-state)
 [![Total Downloads](https://img.shields.io/packagist/dt/zgabievi/kendo-grid-state.svg?style=flat-square)](https://packagist.org/packages/zgabievi/kendo-grid-state)
